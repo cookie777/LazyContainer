@@ -1,0 +1,22 @@
+{
+  "name": "LazyContainer",
+  "version": "0.1.0",
+  "summary": "A short description of LazyContainer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cookie777/LazyContainer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cookie777": "@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/cookie777/LazyContainer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LazyContainer/Classes/**/*"
+}

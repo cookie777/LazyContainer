@@ -1,0 +1,16 @@
+PODS:
+  - LazyContainer (0.1.0)
+
+DEPENDENCIES:
+  - LazyContainer (from `../`)
+
+EXTERNAL SOURCES:
+  LazyContainer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LazyContainer: 1b544be1db0f6df7e1aacb8070f9df0447e67704
+
+PODFILE CHECKSUM: 506edb8af444a0325c667a3daab43a12a96fee37
+
+COCOAPODS: 1.11.3

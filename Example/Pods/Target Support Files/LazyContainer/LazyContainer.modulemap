@@ -1,0 +1,6 @@
+framework module LazyContainer {
+  umbrella header "LazyContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}
