@@ -42,10 +42,10 @@
 		607FACE51AFB9204008FA782 /* LazyContainer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyContainer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7EEEA96BB9FE7049BA5A6BAE /* LazyContainer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LazyContainer.podspec; path = ../LazyContainer.podspec; sourceTree = "<group>"; };
-		9865EAC438389F8874665792 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7EEEA96BB9FE7049BA5A6BAE /* LazyContainer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LazyContainer.podspec; path = ../LazyContainer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9865EAC438389F8874665792 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B1592D7271EA9D5E39C8BF6E /* Pods-LazyContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyContainer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LazyContainer_Tests/Pods-LazyContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B30FA27E710C217D2514137F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B30FA27E710C217D2514137F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CCF473B10339A6BB743D99A8 /* Pods-LazyContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyContainer_Example.debug.xcconfig"; path = "Target Support Files/Pods-LazyContainer_Example/Pods-LazyContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				B1592D7271EA9D5E39C8BF6E /* Pods-LazyContainer_Tests.debug.xcconfig */,
 				2155EDDE9926A3F1286487A4 /* Pods-LazyContainer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
