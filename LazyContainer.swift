@@ -15,7 +15,7 @@ public final class LazyContainer {
     
     /// Register a builder to the container.
     /// The registered-key will be it's object type.
-    /// - Parameter builder: A  closure which returns an object. The object is not initialized until it's resolved. An unowned self-lazy-container is passed as a parameter in the closure so that you can call other dependencies by resolving them.
+    /// - Parameter builder: A  closure which returns an object. The internal object is not initialized until it's resolved. An unowned self-lazy-container is passed as a parameter in the closure so that you can call other dependencies by resolving them.
     public func register<T>(_ builder: @escaping (_ container: LazyContainer) -> T) {
         let key = "\(T.self)"
         // Register. Pass weak self-container for accessing other dependencies. "Weak" is for avoiding from ARC retain-cycle.
@@ -23,6 +23,14 @@ public final class LazyContainer {
             guard let self = self else { fatalError("Resolve was tried to called without LazyContainer.") }
             return builder(self)
         })
+    }
+    
+    /// Register a builder to the container.
+    /// The registered-key will be it's object type.
+    /// - Parameter builder: `Builder` class. The internal object is not initialized until it's resolved.
+    public func register<T>(_ builder: Builder<T>) {
+        let key = "\(T.self)"
+        builders[key] = builder
     }
     
     /// Resolve the object from the builder in the container

@@ -20,11 +20,19 @@ final class LazyContainerTests: XCTestCase {
         lazyContainer = nil
     }
     
-    func testRegisterNotCalled() {
+    func testRegisterClosureNotCalled() {
         let flagManager = FlagManager()
         lazyContainer.register { _ in
             ServiceA(flagManager)
         }
+        XCTAssertEqual(flagManager.initCountA, 0)
+    }
+    
+    func testRegisterBuilderNotCalled() {
+        let flagManager = FlagManager()
+        lazyContainer.register(Builder({
+            ServiceA(flagManager)
+        }))
         XCTAssertEqual(flagManager.initCountA, 0)
     }
     
@@ -37,7 +45,7 @@ final class LazyContainerTests: XCTestCase {
         XCTAssertEqual(flagManager.initCountA, 1)
         XCTAssertTrue((serviceA as Any) is ServiceA)
     }
-    
+
     func testResolveReuse() {
         let flagManager = FlagManager()
         lazyContainer.register { _ in
