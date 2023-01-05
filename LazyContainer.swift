@@ -11,6 +11,7 @@ public final class LazyContainer {
     /// An internal registry to keep track of builders
     private var builders: [String : AnyBuilder] = [:]
     
+    public init() {}
     /// Register a builder to the container.
     /// The registered-key will be it's object type.
     /// - Parameter builder: a closure which returns an object. The object is not initialized until it's resolved.

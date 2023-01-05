@@ -11,6 +11,7 @@
 		32A2C38EDF66DDF7C52022CC /* Pods_LazyContainer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231B692A8A1CC849F94CF929 /* Pods_LazyContainer_Example.framework */; };
 		5051898C296577EC00545382 /* HelperClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051898B296577EC00545382 /* HelperClasses.swift */; };
 		5051898E2965780900545382 /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051898D2965780900545382 /* BuilderTests.swift */; };
+		505189922966637700545382 /* LazyContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189912966637700545382 /* LazyContainerTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		2404DBB22C80CB1B323C59CE /* Pods-LazyContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyContainer_Example.release.xcconfig"; path = "Target Support Files/Pods-LazyContainer_Example/Pods-LazyContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5051898B296577EC00545382 /* HelperClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClasses.swift; sourceTree = "<group>"; };
 		5051898D2965780900545382 /* BuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTests.swift; sourceTree = "<group>"; };
+		505189912966637700545382 /* LazyContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyContainerTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LazyContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				5051898D2965780900545382 /* BuilderTests.swift */,
+				505189912966637700545382 /* LazyContainerTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5051898C296577EC00545382 /* HelperClasses.swift in Sources */,
+				505189922966637700545382 /* LazyContainerTests.swift in Sources */,
 				5051898E2965780900545382 /* BuilderTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
