@@ -11,7 +11,6 @@
 		505189872965533B00545382 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189862965533B00545382 /* Builder.swift */; };
 		5051899029665F9000545382 /* LazyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051898F29665F9000545382 /* LazyContainer.swift */; };
 		5BAE39A6B2D95DDF7DA1C030F8708C59 /* Pods-LazyContainer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF3895861435B25FE933A5C021917D4 /* Pods-LazyContainer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F39CC4FC851C7CFBDA96BB1C1D156AD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C3529B49474D9D855E31A4ACF97C55 /* ReplaceMe.swift */; };
 		6240436FD46BDBA9EE163EF3B69515D5 /* Pods-LazyContainer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB2536DAE77299897E4E7CC4FAA00B8 /* Pods-LazyContainer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		706DF0CFCB33DC3562ABE6B21D765432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		774ACFF26B13EC844E33AD002A15F86C /* Pods-LazyContainer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C39D9DF28E1FD014BB28F436AA2D2E79 /* Pods-LazyContainer_Tests-dummy.m */; };
@@ -45,7 +44,6 @@
 		17630B828A5B7DFA155D1B60F5D38A80 /* LazyContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LazyContainer.modulemap; sourceTree = "<group>"; };
 		18E87004E10F19E03F400D963EFCE1FA /* Pods-LazyContainer_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LazyContainer_Tests"; path = Pods_LazyContainer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		256981BD3D4CD22990E699EA3D9F3F7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		30C3529B49474D9D855E31A4ACF97C55 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LazyContainer/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3919DA9C6CA74198A43039D5EC5895EA /* LazyContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LazyContainer-Info.plist"; sourceTree = "<group>"; };
 		477732ACE8E3CD50591CA30E7FA27AEC /* LazyContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LazyContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BB2536DAE77299897E4E7CC4FAA00B8 /* Pods-LazyContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LazyContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			children = (
 				5051898F29665F9000545382 /* LazyContainer.swift */,
 				505189862965533B00545382 /* Builder.swift */,
-				30C3529B49474D9D855E31A4ACF97C55 /* ReplaceMe.swift */,
 				7A803952841783B2B5F23B83E95523F0 /* Pod */,
 				85337F2A5D431C41D04639502F720B7D /* Support Files */,
 			);
@@ -375,7 +372,6 @@
 			files = (
 				96600E9048C6C206CE71FBF08CA822EE /* LazyContainer-dummy.m in Sources */,
 				5051899029665F9000545382 /* LazyContainer.swift in Sources */,
-				5F39CC4FC851C7CFBDA96BB1C1D156AD /* ReplaceMe.swift in Sources */,
 				505189872965533B00545382 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
