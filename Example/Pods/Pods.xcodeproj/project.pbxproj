@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		253A6EBA3D6C37692F885AE432995FB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		505189872965533B00545382 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189862965533B00545382 /* Builder.swift */; };
+		5051899029665F9000545382 /* LazyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051898F29665F9000545382 /* LazyContainer.swift */; };
 		5BAE39A6B2D95DDF7DA1C030F8708C59 /* Pods-LazyContainer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF3895861435B25FE933A5C021917D4 /* Pods-LazyContainer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F39CC4FC851C7CFBDA96BB1C1D156AD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C3529B49474D9D855E31A4ACF97C55 /* ReplaceMe.swift */; };
 		6240436FD46BDBA9EE163EF3B69515D5 /* Pods-LazyContainer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB2536DAE77299897E4E7CC4FAA00B8 /* Pods-LazyContainer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +51,7 @@
 		4BB2536DAE77299897E4E7CC4FAA00B8 /* Pods-LazyContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LazyContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4FF3895861435B25FE933A5C021917D4 /* Pods-LazyContainer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LazyContainer_Example-umbrella.h"; sourceTree = "<group>"; };
 		505189862965533B00545382 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		5051898F29665F9000545382 /* LazyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyContainer.swift; sourceTree = "<group>"; };
 		57138C994986505E1EAA1AFD0C848075 /* Pods-LazyContainer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LazyContainer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		61F43FD59B4DBCA50AB4735CBA9F712E /* LazyContainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LazyContainer.release.xcconfig; sourceTree = "<group>"; };
 		6435679CF3E11E03F1DBB11A08887DA4 /* Pods-LazyContainer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LazyContainer_Example-Info.plist"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		4BEFF7C68A7CCC4891BC8C90A75B5B8C /* LazyContainer */ = {
 			isa = PBXGroup;
 			children = (
+				5051898F29665F9000545382 /* LazyContainer.swift */,
 				505189862965533B00545382 /* Builder.swift */,
 				30C3529B49474D9D855E31A4ACF97C55 /* ReplaceMe.swift */,
 				7A803952841783B2B5F23B83E95523F0 /* Pod */,
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96600E9048C6C206CE71FBF08CA822EE /* LazyContainer-dummy.m in Sources */,
+				5051899029665F9000545382 /* LazyContainer.swift in Sources */,
 				5F39CC4FC851C7CFBDA96BB1C1D156AD /* ReplaceMe.swift in Sources */,
 				505189872965533B00545382 /* Builder.swift in Sources */,
 			);
