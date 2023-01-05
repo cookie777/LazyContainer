@@ -13,7 +13,7 @@ public final class LazyContainer {
     
     public init() {}
     
-    /// Register a builder to the container.
+    /// Register a builder by closure to the container.
     /// The registered-key will be it's object type.
     /// - Parameter builder: A  closure which returns an object. The internal object is not initialized until it's resolved. An unowned self-lazy-container is passed as a parameter in the closure so that you can call other dependencies by resolving them.
     public func register<T>(_ builder: @escaping (_ container: LazyContainer) -> T) {
