@@ -12,6 +12,17 @@
 		5051898C296577EC00545382 /* HelperClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051898B296577EC00545382 /* HelperClasses.swift */; };
 		5051898E2965780900545382 /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051898D2965780900545382 /* BuilderTests.swift */; };
 		505189922966637700545382 /* LazyContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189912966637700545382 /* LazyContainerTests.swift */; };
+		5051899B296A829100545382 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051899A296A829100545382 /* Cat.swift */; };
+		5051899D296A829800545382 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051899C296A829800545382 /* Dog.swift */; };
+		505189A1296A82DF00545382 /* LocalDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189A0296A82DF00545382 /* LocalDataRequest.swift */; };
+		505189A3296A82EC00545382 /* RemoteDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189A2296A82EC00545382 /* RemoteDataRequest.swift */; };
+		505189A5296A831C00545382 /* RemoteDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189A4296A831C00545382 /* RemoteDataResponse.swift */; };
+		505189A7296A833500545382 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189A6296A833500545382 /* LocalDataSource.swift */; };
+		505189AA296A83FA00545382 /* LocalDBDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189A9296A83FA00545382 /* LocalDBDataSource.swift */; };
+		505189AC296A842A00545382 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189AB296A842A00545382 /* RemoteDataSource.swift */; };
+		505189AE296A843F00545382 /* RestAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189AD296A843F00545382 /* RestAPIDataSource.swift */; };
+		505189B1296A846400545382 /* CatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189B0296A846400545382 /* CatRepository.swift */; };
+		505189B3296A846E00545382 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189B2296A846E00545382 /* DogRepository.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -37,6 +48,17 @@
 		5051898B296577EC00545382 /* HelperClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClasses.swift; sourceTree = "<group>"; };
 		5051898D2965780900545382 /* BuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTests.swift; sourceTree = "<group>"; };
 		505189912966637700545382 /* LazyContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyContainerTests.swift; sourceTree = "<group>"; };
+		5051899A296A829100545382 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		5051899C296A829800545382 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		505189A0296A82DF00545382 /* LocalDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataRequest.swift; sourceTree = "<group>"; };
+		505189A2296A82EC00545382 /* RemoteDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataRequest.swift; sourceTree = "<group>"; };
+		505189A4296A831C00545382 /* RemoteDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataResponse.swift; sourceTree = "<group>"; };
+		505189A6296A833500545382 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		505189A9296A83FA00545382 /* LocalDBDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDBDataSource.swift; sourceTree = "<group>"; };
+		505189AB296A842A00545382 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		505189AD296A843F00545382 /* RestAPIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIDataSource.swift; sourceTree = "<group>"; };
+		505189B0296A846400545382 /* CatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRepository.swift; sourceTree = "<group>"; };
+		505189B2296A846E00545382 /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LazyContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +104,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		50518993296A7F7F00545382 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				50518998296A7FBA00545382 /* service */,
+				50518997296A7FA200545382 /* model */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		50518997296A7FA200545382 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				50518999296A828300545382 /* dataSource */,
+				5051899A296A829100545382 /* Cat.swift */,
+				5051899C296A829800545382 /* Dog.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		50518998296A7FBA00545382 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				505189AF296A845700545382 /* repository */,
+				505189A8296A83E600545382 /* dataSource */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		50518999296A828300545382 /* dataSource */ = {
+			isa = PBXGroup;
+			children = (
+				505189A0296A82DF00545382 /* LocalDataRequest.swift */,
+				505189A2296A82EC00545382 /* RemoteDataRequest.swift */,
+				505189A4296A831C00545382 /* RemoteDataResponse.swift */,
+			);
+			name = dataSource;
+			sourceTree = "<group>";
+		};
+		505189A8296A83E600545382 /* dataSource */ = {
+			isa = PBXGroup;
+			children = (
+				505189A6296A833500545382 /* LocalDataSource.swift */,
+				505189A9296A83FA00545382 /* LocalDBDataSource.swift */,
+				505189AB296A842A00545382 /* RemoteDataSource.swift */,
+				505189AD296A843F00545382 /* RestAPIDataSource.swift */,
+			);
+			name = dataSource;
+			sourceTree = "<group>";
+		};
+		505189AF296A845700545382 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				505189B0296A846400545382 /* CatRepository.swift */,
+				505189B2296A846E00545382 /* DogRepository.swift */,
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +186,7 @@
 		607FACD21AFB9204008FA782 /* Example for LazyContainer */ = {
 			isa = PBXGroup;
 			children = (
+				50518993296A7F7F00545382 /* lib */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -338,7 +419,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				505189A3296A82EC00545382 /* RemoteDataRequest.swift in Sources */,
+				505189AA296A83FA00545382 /* LocalDBDataSource.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				505189A5296A831C00545382 /* RemoteDataResponse.swift in Sources */,
+				505189A1296A82DF00545382 /* LocalDataRequest.swift in Sources */,
+				505189AC296A842A00545382 /* RemoteDataSource.swift in Sources */,
+				5051899D296A829800545382 /* Dog.swift in Sources */,
+				505189A7296A833500545382 /* LocalDataSource.swift in Sources */,
+				5051899B296A829100545382 /* Cat.swift in Sources */,
+				505189B1296A846400545382 /* CatRepository.swift in Sources */,
+				505189B3296A846E00545382 /* DogRepository.swift in Sources */,
+				505189AE296A843F00545382 /* RestAPIDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
