@@ -9,6 +9,9 @@
 import Foundation
 
 final class RestAPIDataSource: RemoteDataSource {
+    init() {
+        print("RestAPIDataSource is init")
+    }
     func get<T>(_ request: RemoteDataRequest) async -> RemoteDataResponse<T> where T : Decodable {
         switch T.self {
         case is Cat.Type:

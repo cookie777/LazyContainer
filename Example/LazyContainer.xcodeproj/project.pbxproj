@@ -26,6 +26,8 @@
 		505189B3296A846E00545382 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189B2296A846E00545382 /* DogRepository.swift */; };
 		505189C0296B7F9200545382 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505189BF296B7F9200545382 /* RootNavigationController.swift */; };
 		505A0BF9296FB266007DE67E /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BF8296FB266007DE67E /* CatViewModel.swift */; };
+		505A0BFB296FB35C007DE67E /* DogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BFA296FB35C007DE67E /* DogView.swift */; };
+		505A0BFD296FB3BA007DE67E /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BFC296FB3BA007DE67E /* DogViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		505189B2296A846E00545382 /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
 		505189BF296B7F9200545382 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		505A0BF8296FB266007DE67E /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
+		505A0BFA296FB35C007DE67E /* DogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogView.swift; sourceTree = "<group>"; };
+		505A0BFC296FB3BA007DE67E /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LazyContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 		505A0BF6296FB244007DE67E /* dog */ = {
 			isa = PBXGroup;
 			children = (
+				505A0BFA296FB35C007DE67E /* DogView.swift */,
+				505A0BFC296FB3BA007DE67E /* DogViewModel.swift */,
 			);
 			name = dog;
 			sourceTree = "<group>";
@@ -468,11 +474,13 @@
 				505189A5296A831C00545382 /* RemoteDataResponse.swift in Sources */,
 				502BA578296BD20E007C3449 /* CatView.swift in Sources */,
 				505189A1296A82DF00545382 /* LocalDataRequest.swift in Sources */,
+				505A0BFB296FB35C007DE67E /* DogView.swift in Sources */,
 				505189AC296A842A00545382 /* RemoteDataSource.swift in Sources */,
 				5051899D296A829800545382 /* Dog.swift in Sources */,
 				505189A7296A833500545382 /* LocalDataSource.swift in Sources */,
 				5051899B296A829100545382 /* Cat.swift in Sources */,
 				505189B1296A846400545382 /* CatRepository.swift in Sources */,
+				505A0BFD296FB3BA007DE67E /* DogViewModel.swift in Sources */,
 				505189B3296A846E00545382 /* DogRepository.swift in Sources */,
 				505189AE296A843F00545382 /* RestAPIDataSource.swift in Sources */,
 			);
