@@ -8,8 +8,11 @@
 
 import Foundation
 
-final class DogRepository {
-    
+protocol DogRepository {
+    func getLatestDogs() async -> [Dog]
+}
+
+final class DogRepositoryImp: DogRepository {
     private var remoteDataSource: RemoteDataSource
     private var localDataSource: LocalDataSource
     
@@ -18,7 +21,7 @@ final class DogRepository {
         self.localDataSource = localDataSource
     }
     
-    func getLatestCat() async -> [Dog] {
+    func getLatestDogs() async -> [Dog] {
         let response: RemoteDataResponse<Dog> = await remoteDataSource.get(RemoteDataRequest())
         guard let dog = response.result else { return [] }
         

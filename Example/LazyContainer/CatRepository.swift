@@ -8,7 +8,11 @@
 
 import Foundation
 
-final class CatRepository {
+protocol CatRepository {
+    func getLatestCats() async -> [Cat]
+}
+
+final class CatRepositoryImp: CatRepository {
     
     private var remoteDataSource: RemoteDataSource
     private var localDataSource: LocalDataSource
@@ -16,9 +20,10 @@ final class CatRepository {
     init(remoteDataSource: RemoteDataSource, localDataSource: LocalDataSource) {
         self.remoteDataSource = remoteDataSource
         self.localDataSource = localDataSource
+        print("Cat Repo is init")
     }
     
-    func getLatestCat() async -> [Cat] {
+    func getLatestCats() async -> [Cat] {
         let response: RemoteDataResponse<Cat> = await remoteDataSource.get(RemoteDataRequest())
         guard let cat = response.result else { return [] }
         
