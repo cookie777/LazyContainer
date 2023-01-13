@@ -11,4 +11,5 @@ import Foundation
 struct Cat {
     var message: String
 }
+extension Cat: Animal {}
 extension Cat: Decodable {}

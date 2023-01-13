@@ -28,6 +28,9 @@
 		505A0BF9296FB266007DE67E /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BF8296FB266007DE67E /* CatViewModel.swift */; };
 		505A0BFB296FB35C007DE67E /* DogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BFA296FB35C007DE67E /* DogView.swift */; };
 		505A0BFD296FB3BA007DE67E /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BFC296FB3BA007DE67E /* DogViewModel.swift */; };
+		505A0C0029711AE8007DE67E /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BFF29711AE8007DE67E /* AnimalView.swift */; };
+		505A0C0229711B07007DE67E /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C0129711B07007DE67E /* AnimalViewModel.swift */; };
+		505A0C0429711B70007DE67E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C0329711B70007DE67E /* Animal.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 		505A0BF8296FB266007DE67E /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 		505A0BFA296FB35C007DE67E /* DogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogView.swift; sourceTree = "<group>"; };
 		505A0BFC296FB3BA007DE67E /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
+		505A0BFF29711AE8007DE67E /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
+		505A0C0129711B07007DE67E /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
+		505A0C0329711B70007DE67E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LazyContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				50518999296A828300545382 /* dataSource */,
+				505A0C0329711B70007DE67E /* Animal.swift */,
 				5051899A296A829100545382 /* Cat.swift */,
 				5051899C296A829800545382 /* Dog.swift */,
 			);
@@ -175,7 +182,7 @@
 		505189B4296ACF3200545382 /* screen */ = {
 			isa = PBXGroup;
 			children = (
-				505A0BF7296FB249007DE67E /* both */,
+				505A0BF7296FB249007DE67E /* animal */,
 				505A0BF6296FB244007DE67E /* dog */,
 				505A0BF5296FB23F007DE67E /* cat */,
 				505189BF296B7F9200545382 /* RootNavigationController.swift */,
@@ -201,11 +208,13 @@
 			name = dog;
 			sourceTree = "<group>";
 		};
-		505A0BF7296FB249007DE67E /* both */ = {
+		505A0BF7296FB249007DE67E /* animal */ = {
 			isa = PBXGroup;
 			children = (
+				505A0BFF29711AE8007DE67E /* AnimalView.swift */,
+				505A0C0129711B07007DE67E /* AnimalViewModel.swift */,
 			);
-			name = both;
+			name = animal;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -476,12 +485,15 @@
 				505189A1296A82DF00545382 /* LocalDataRequest.swift in Sources */,
 				505A0BFB296FB35C007DE67E /* DogView.swift in Sources */,
 				505189AC296A842A00545382 /* RemoteDataSource.swift in Sources */,
+				505A0C0429711B70007DE67E /* Animal.swift in Sources */,
 				5051899D296A829800545382 /* Dog.swift in Sources */,
 				505189A7296A833500545382 /* LocalDataSource.swift in Sources */,
 				5051899B296A829100545382 /* Cat.swift in Sources */,
 				505189B1296A846400545382 /* CatRepository.swift in Sources */,
 				505A0BFD296FB3BA007DE67E /* DogViewModel.swift in Sources */,
+				505A0C0029711AE8007DE67E /* AnimalView.swift in Sources */,
 				505189B3296A846E00545382 /* DogRepository.swift in Sources */,
+				505A0C0229711B07007DE67E /* AnimalViewModel.swift in Sources */,
 				505189AE296A843F00545382 /* RestAPIDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
