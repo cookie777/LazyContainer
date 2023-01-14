@@ -12,7 +12,7 @@ import LazyContainer
 class AnimalViewModel: ObservableObject {
     
     @Published var animals: [Animal] = []
-    private let container: LazyContainer
+    let container: LazyContainer
     
     internal init(container: LazyContainer) {
         self.container = container

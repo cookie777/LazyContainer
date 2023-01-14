@@ -17,7 +17,7 @@ struct DogView: View {
             Button {
                 viewModel.getDogs()
             } label: {
-                Text("Get cats")
+                Text("Get dogs")
             }
 
             Text(viewModel.dogs.description)

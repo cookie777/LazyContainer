@@ -21,6 +21,15 @@ struct AnimalView: View {
             }
 
             Text(viewModel.animals.description)
+            
+            Divider()
+            
+            NavigationLink("Go to CatView") {
+                CatView(viewModel: CatViewModel(container: viewModel.container))
+            }
+            NavigationLink("Go to DogView") {
+                DogView(viewModel: DogViewModel(container: viewModel.container))
+            }
         }
     }
 }

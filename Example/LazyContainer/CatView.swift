@@ -12,6 +12,10 @@ import LazyContainer
 struct CatView: View {
     @ObservedObject var viewModel: CatViewModel
     
+    init(viewModel: CatViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack {
             Button {
