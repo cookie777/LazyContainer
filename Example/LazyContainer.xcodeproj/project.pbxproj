@@ -31,8 +31,8 @@
 		505A0C0029711AE8007DE67E /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0BFF29711AE8007DE67E /* AnimalView.swift */; };
 		505A0C0229711B07007DE67E /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C0129711B07007DE67E /* AnimalViewModel.swift */; };
 		505A0C0429711B70007DE67E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C0329711B70007DE67E /* Animal.swift */; };
+		505A0C262971320F007DE67E /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C252971320F007DE67E /* ExampleApp.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -75,10 +75,10 @@
 		505A0BFF29711AE8007DE67E /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 		505A0C0129711B07007DE67E /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
 		505A0C0329711B70007DE67E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		505A0C252971320F007DE67E /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LazyContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -182,6 +182,7 @@
 		505189B4296ACF3200545382 /* screen */ = {
 			isa = PBXGroup;
 			children = (
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				505A0BF7296FB249007DE67E /* animal */,
 				505A0BF6296FB244007DE67E /* dog */,
 				505A0BF5296FB23F007DE67E /* cat */,
@@ -217,6 +218,16 @@
 			name = animal;
 			sourceTree = "<group>";
 		};
+		505A0C27297132CC007DE67E /* archived */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+			);
+			name = archived;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -241,14 +252,11 @@
 		607FACD21AFB9204008FA782 /* Example for LazyContainer */ = {
 			isa = PBXGroup;
 			children = (
+				505A0C252971320F007DE67E /* ExampleApp.swift */,
 				505189B4296ACF3200545382 /* screen */,
 				50518993296A7F7F00545382 /* lib */,
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				505A0C27297132CC007DE67E /* archived */,
 			);
 			name = "Example for LazyContainer";
 			path = LazyContainer;
@@ -474,7 +482,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				505A0BF9296FB266007DE67E /* CatViewModel.swift in Sources */,
 				505189C0296B7F9200545382 /* RootNavigationController.swift in Sources */,
 				505189A3296A82EC00545382 /* RemoteDataRequest.swift in Sources */,
@@ -492,6 +499,7 @@
 				505189B1296A846400545382 /* CatRepository.swift in Sources */,
 				505A0BFD296FB3BA007DE67E /* DogViewModel.swift in Sources */,
 				505A0C0029711AE8007DE67E /* AnimalView.swift in Sources */,
+				505A0C262971320F007DE67E /* ExampleApp.swift in Sources */,
 				505189B3296A846E00545382 /* DogRepository.swift in Sources */,
 				505A0C0229711B07007DE67E /* AnimalViewModel.swift in Sources */,
 				505189AE296A843F00545382 /* RestAPIDataSource.swift in Sources */,
@@ -643,7 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LazyContainer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -659,7 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LazyContainer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
