@@ -19,6 +19,11 @@ final class DogRepositoryImp: DogRepository {
     init(remoteDataSource: RemoteDataSource, localDataSource: LocalDataSource) {
         self.remoteDataSource = remoteDataSource
         self.localDataSource = localDataSource
+        print("\(Self.self) init")
+    }
+    
+    deinit {
+        print("\(Self.self) de-init")
     }
     
     func getLatestDogs() async -> [Dog] {

@@ -9,6 +9,13 @@
 import Foundation
 
 final class LocalDBDataSource: LocalDataSource {
+    init () {
+        print("\(Self.self) init")
+    }
+    deinit {
+        print("\(Self.self) de-init")
+    }
+    
     func read<T>(_ request: LocalDataRequest) async -> [T] {
         switch T.self {
         case is Cat.Type:
