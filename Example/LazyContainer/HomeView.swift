@@ -7,9 +7,10 @@
 //
 
 import SwiftUI
+import LazyContainer
 
 struct HomeView: View {
-    var viewModel: HomeViewModel
+    let viewModel: HomeViewModel
 
     var body: some View {
         NavigationStack {
@@ -22,8 +23,25 @@ struct HomeView: View {
     }
 }
 
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeView(viewModel: HomeViewModel(container:))
-//    }
-//}
+struct HomeView_Previews: PreviewProvider {
+    struct WrapperView: View {
+        let container: LazyContainer = {
+            let container = LazyContainer()
+            container.register { _ in
+                return MockDogRepository() as DogRepository
+            }
+            container.register { _ in
+                return MockCatRepository() as CatRepository
+            }
+            return container
+        } ()
+        
+        var body: some View {
+            AnimalView(viewModel: AnimalViewModel(container: container))
+        }
+    }
+    
+    static var previews: some View {
+        WrapperView()
+    }
+}

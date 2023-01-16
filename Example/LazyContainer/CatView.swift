@@ -30,12 +30,6 @@ struct CatView: View {
 }
 
 struct CatView_Previews: PreviewProvider {
-    struct MockCatRepository: CatRepository {
-        func getLatestCats() async -> [Cat] {
-            return [Cat(message: "Mock cat")]
-        }
-    }
-    
     struct WrapperView: View {
         let container: LazyContainer = {
             let container = LazyContainer()

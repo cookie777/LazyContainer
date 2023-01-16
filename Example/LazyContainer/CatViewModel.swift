@@ -9,12 +9,12 @@
 import SwiftUI
 import LazyContainer
 
-class CatViewModel: ObservableObject {
+final class CatViewModel: ObservableObject {
     
     @Published var cats: [Cat] = []
     private let container: LazyContainer
     
-    internal init(container: LazyContainer) {
+    init(container: LazyContainer) {
         self.container = container
     }
     

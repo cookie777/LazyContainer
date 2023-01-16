@@ -33,6 +33,8 @@
 		505A0C262971320F007DE67E /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C252971320F007DE67E /* ExampleApp.swift */; };
 		505A0C2929722C95007DE67E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C2829722C95007DE67E /* HomeView.swift */; };
 		505A0C2C29722CBF007DE67E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C2B29722CBF007DE67E /* HomeViewModel.swift */; };
+		505A0C2F29735C6F007DE67E /* MockCatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C2E29735C6F007DE67E /* MockCatRepository.swift */; };
+		505A0C3129735CD8007DE67E /* MockDogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A0C3029735CD8007DE67E /* MockDogRepository.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -78,6 +80,8 @@
 		505A0C252971320F007DE67E /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		505A0C2829722C95007DE67E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		505A0C2B29722CBF007DE67E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		505A0C2E29735C6F007DE67E /* MockCatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatRepository.swift; sourceTree = "<group>"; };
+		505A0C3029735CD8007DE67E /* MockDogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDogRepository.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LazyContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		505189AF296A845700545382 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				505A0C2D29735C60007DE67E /* mock */,
 				505189B0296A846400545382 /* CatRepository.swift */,
 				505189B2296A846E00545382 /* DogRepository.swift */,
 			);
@@ -237,6 +242,16 @@
 				505A0BF7296FB249007DE67E /* animal */,
 			);
 			name = home;
+			sourceTree = "<group>";
+		};
+		505A0C2D29735C60007DE67E /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				505A0C2E29735C6F007DE67E /* MockCatRepository.swift */,
+				505A0C3029735CD8007DE67E /* MockDogRepository.swift */,
+			);
+			name = mock;
+			path = ../Tests;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -507,6 +522,8 @@
 				505A0C0429711B70007DE67E /* Animal.swift in Sources */,
 				5051899D296A829800545382 /* Dog.swift in Sources */,
 				505189A7296A833500545382 /* LocalDataSource.swift in Sources */,
+				505A0C3129735CD8007DE67E /* MockDogRepository.swift in Sources */,
+				505A0C2F29735C6F007DE67E /* MockCatRepository.swift in Sources */,
 				5051899B296A829100545382 /* Cat.swift in Sources */,
 				505189B1296A846400545382 /* CatRepository.swift in Sources */,
 				505A0BFD296FB3BA007DE67E /* DogViewModel.swift in Sources */,

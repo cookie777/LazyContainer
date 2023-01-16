@@ -13,3 +13,9 @@ struct Cat {
 }
 extension Cat: Animal {}
 extension Cat: Decodable {}
+
+extension Cat: CustomStringConvertible {
+    var description: String {
+        return message
+    }
+}

@@ -11,10 +11,13 @@ import LazyContainer
 
 @main
 struct SampleApp: App {
-    let container: LazyContainer
+    private let container: LazyContainer
     
     init() {
         self.container = LazyContainer()
+        
+        /// Register dependencies.
+        /// The order doesn't matter, but we must register all of them
         container.register { container in
             let repository: CatRepository = CatRepositoryImp(remoteDataSource: container.resolve(), localDataSource: container.resolve())
             return repository

@@ -20,7 +20,11 @@ final class CatRepositoryImp: CatRepository {
     init(remoteDataSource: RemoteDataSource, localDataSource: LocalDataSource) {
         self.remoteDataSource = remoteDataSource
         self.localDataSource = localDataSource
-        print("Cat Repo is init")
+        print("\(Self.self) init")
+    }
+    
+    deinit {
+        print("\(Self.self) de-init")
     }
     
     func getLatestCats() async -> [Cat] {
@@ -28,7 +32,6 @@ final class CatRepositoryImp: CatRepository {
         guard let cat = response.result else { return [] }
         
         _ = await localDataSource.update([cat])
-        
         return [cat]
     }
 }

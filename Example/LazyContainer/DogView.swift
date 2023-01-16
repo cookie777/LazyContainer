@@ -26,12 +26,6 @@ struct DogView: View {
 }
 
 struct DogView_Previews: PreviewProvider {
-    struct MockDogRepository: DogRepository {
-        func getLatestDogs() async -> [Dog] {
-            return [Dog(message: "Mock dog")]
-        }
-    }
-    
     struct WrapperView: View {
         let container: LazyContainer = {
             let container = LazyContainer()

@@ -14,3 +14,8 @@ struct Dog {
 
 extension Dog: Animal {}
 extension Dog: Decodable {}
+extension Dog: CustomStringConvertible {
+    var description: String {
+        return message
+    }
+}
