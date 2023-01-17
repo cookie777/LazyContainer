@@ -1,0 +1,21 @@
+name: Unit Test
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop, feature/**]
+env:
+  PROJECT_NAME: LazyContainer
+
+jobs:
+  run_tests:
+    runs-on: macos-12
+    steps:
+    - uses: actions/checkout@v3
+    - name: Select Xcode version
+      run: sudo xcode-select -s '/Applications/Xcode_14.2.app/Contents/Developer'
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Build
+      run: xcodebuild -sdk iphonesimulator -configuration Debug build
