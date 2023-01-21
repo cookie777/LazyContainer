@@ -122,13 +122,21 @@
 		4BEFF7C68A7CCC4891BC8C90A75B5B8C /* LazyContainer */ = {
 			isa = PBXGroup;
 			children = (
-				5051898F29665F9000545382 /* LazyContainer.swift */,
-				505189862965533B00545382 /* Builder.swift */,
+				50B653DB2977965100D21C77 /* Source */,
 				7A803952841783B2B5F23B83E95523F0 /* Pod */,
 				85337F2A5D431C41D04639502F720B7D /* Support Files */,
 			);
 			name = LazyContainer;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		50B653DB2977965100D21C77 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5051898F29665F9000545382 /* LazyContainer.swift */,
+				505189862965533B00545382 /* Builder.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {

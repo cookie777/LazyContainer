@@ -18,19 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  TODO: Add long description of the pod here.
+  `LazyContainer` is a simple class to contain multiple class and struct. A registered class or struct is not constructed until it is called, and return the cache after the second call.
+  It also has a `Builder` class to simply store the lazy constructer. Both `LazyContainer` and `Builder` can be used variable purpose such as dependency injection and caching.
                        DESC
 
   s.homepage         = 'https://github.com/cookie777/LazyContainer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'cookie777' => '@gmail.com' }
+  s.author           = { 'cookie777' => 'takayuki.contact@gmail.com' }
   s.source           = { :git => 'https://github.com/cookie777/LazyContainer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'LazyContainer/Classes/**/*'
+  s.swift_versions = '5.5'
+  s.source_files = 'Source/**/*.swift'
   
   # s.resource_bundles = {
   #   'LazyContainer' => ['LazyContainer/Assets/*.png']
