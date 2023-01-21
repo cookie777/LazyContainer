@@ -10,7 +10,6 @@ public final class LazyContainer {
     
     /// An internal registry to keep track of builders
     private var builders: [String : AnyBuilder] = [:]
-    
     public init() {}
     
     /// Register a builder by closure to the container.
