@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LazyContainer'
-  s.version          = '0.1.0'
+  s.version          = 'v0.1.0-pre-release'
   s.summary          = 'A Lazy initializing container for Dependency injection. The registered classes will not constructed until they are called'
 
 # This description is used to generate tags and improve search results.
