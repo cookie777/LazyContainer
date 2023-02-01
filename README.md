@@ -6,8 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/LazyContainer.svg?style=flat)](https://cocoapods.org/pods/LazyContainer)
 
 
-
-## TL;DR
+## 👀 TL;DR
 `LazyContainer` is a simple library for lazy initialization of classes and structs.
 
 ### Features:
@@ -15,18 +14,21 @@
 - `Builder` class for registering and lazily initializing a single class or struct.
 - `LazyContainer` class for managing multiple Builder classes as a dependency manager or service locator.
 
-## Motivation
+---
+
+## 🔥 Motivation
 
 App setups are often implemented in `AppDelegate` or `SceneDelegate` at launch, which is appropriate for crucial configurations. However, some configurations **may not be immediately necessary** and can be constructed when they are actually used. Heavy setup can **also slow down app launch and affect testing and previewing**. All initializations in `AppDelegate` are also called during unit-tests and SwiftUI Previews, causing unnecessary overhead.
 
 
-## So how can we solve this?
+## 🤔 So how can we solve this?
 To improve this issue, we can use **lazy loading**. By delaying the execution of expensive operations until they are required, we can **save time and memory**. `LazyContainer` makes it easy to achieve this efficiently.
 
-## Features & Usage
+## 🚀 Features & Usage
 What can this library do? It consists of two main classes, `Builder` and `LazyContainer`.
 
-### Builder
+### 1. `Builder`:
+#### Register
 The `Builder` class allows you to register a single class or struct and initialize it lazily later.
 
 Using the `Builder` class is easy. You simply call the `Builder` and pass a closure that declares the class.
@@ -40,6 +42,7 @@ Using the `Builder` class is easy. You simply call the `Builder` and pass a clos
   }
 
 ```
+#### Resovle
 You can access the registered instance by reading the `dependency` from the builder. The first time you read the `dependency`, the class will be instantiated. Subsequent reads will return the cached instance.
 
 ```swift
@@ -51,8 +54,8 @@ You can access the registered instance by reading the `dependency` from the buil
 
 ```
 
-### LazyContainer
-
+### 2. `LazyContainer`:
+#### Basic
 LazyContainer is a Swift class that manages multiple `Builder` classes as a service locator or DI container. It has two main features: `register` and `resolve`. This allows you to register a `Builder` or closure and later resolve it by inferring the type.
 
 ```swift
@@ -66,7 +69,7 @@ lazyContainer.register(builder)
 // Resolve
 let yourClass: YourClass = lazyContainer.resolve()
 ```
-
+#### Optional
 If you want to resolve services safely, use `resolveOptional()` instead of `resolve()`. The `resolveOptional()` returns an optional value, so you can check if a service is registered before trying to access it.
 
 ```swift
@@ -79,7 +82,7 @@ if let yourClass = yourClass {
 ```
 This avoids the `fatalError` that would occur if you tried to access an unregistered service using `resolve()`.
 
-
+#### Closure
 You can also register services using a closure. 
 ```Swift
 lazyContainer.register { _ in
@@ -87,6 +90,7 @@ lazyContainer.register { _ in
 }
 ```
 
+#### Dependency graph
 The container itself is passed as a parameter to the closure, allowing you to access other dependencies easily. This makes it easy to manage dependencies and avoid "dependency hell."
 
 ```swift
@@ -114,7 +118,7 @@ The great thing about this approach is that if `ServiceC` tries to resolve `Serv
 See more details in the [Example project](./Example).
 
 
-## Installation
+## ⬇ Installation
 
 LazyContainer is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -123,15 +127,15 @@ it, simply add the following line to your Podfile:
 pod 'LazyContainer'
 ```
 
-## Requirements
+## ☑️ Requirements
 
 The library is compatible with iOS 10 and above.
 The Example project uses SwiftUI, and requires iOS 13 or higher to run.
 
-## Author & Contribution
+## 🙂 Author & Contribution
 
 cookie777, takayuki-contact@gmail.com
 
-## License
+## 💳 License
 
 LazyContainer is available under the MIT license. See the LICENSE file for more info.
