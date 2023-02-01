@@ -42,7 +42,7 @@ Using the `Builder` class is easy. You simply call the `Builder` and pass a clos
   }
 
 ```
-#### Resovle
+#### Resolve
 You can access the registered instance by reading the `dependency` from the builder. The first time you read the `dependency`, the class will be instantiated. Subsequent reads will return the cached instance.
 
 ```swift
