@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LazyContainer'
-  s.version          = '0.1.0'
-  s.summary          = 'A Lazy initializing container for Dependency injection. The registered classes will not constructed until they are called'
+  s.version          = '1.0.0'
+  s.summary          = 'A `LazyContainer` is a class for efficient storage of classes and structs, using a `Builder` component for easy construction and suitable for use in dependency injection and caching.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  `LazyContainer` is a simple class to contain multiple class and struct. A registered class or struct is not constructed until it is called, and return the cache after the second call.
-  It also has a `Builder` class to simply store the lazy constructer. Both `LazyContainer` and `Builder` can be used variable purpose such as dependency injection and caching.
+  `LazyContainer` is a class for efficiently storing multiple classes and structs, avoiding unnecessary construction until they are called. The class also includes a Builder component for easy construction, making it suitable for use in dependency injection and caching.
                        DESC
 
   s.homepage         = 'https://github.com/cookie777/LazyContainer'
